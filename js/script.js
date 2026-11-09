@@ -96,9 +96,9 @@ $$('img').forEach(img => {
 const TBA = '<span style="opacity:.75;font-style:italic">To be announced</span>';
 const eventDay = new Date(CONFIG.eventDate + 'T00:00:00');
 $('#dDate').innerHTML = eventDay.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'}).replace(', ',',<br>');
-$('#dTime').innerHTML = CONFIG.timeLabel || TBA;
+$('#dTime').innerHTML = CONFIG.timeLabel || '5:00 PM';
 $('#dVenue').innerHTML = CONFIG.venueName || TBA;
-$('#dDress').innerHTML = CONFIG.dressCode || TBA;
+$('#dDress').innerHTML = CONFIG.dressCode || 'Ocean Pearl';
 $('#vName').textContent = CONFIG.venueName;
 $('#vAddr').textContent = CONFIG.address;
 (function(){
@@ -156,7 +156,7 @@ $('#vAddr').textContent = CONFIG.address;
     main.src = thumbs[cur].dataset.src;
     setTimeout(() => frame.classList.remove('swapping'), 80);
   }
-  function start(){ stop(); timer = setInterval(() => show(cur + 1), 5000); }
+  function start(){ stop(); timer = setInterval(() => show(cur + 1), 4000); }
   function stop(){ if(timer){ clearInterval(timer); timer = null; } }
   thumbs.forEach((b,k) => b.addEventListener('click', () => { show(k); start(); }));
   new IntersectionObserver(es => es.forEach(e => e.isIntersecting && portrait.classList.contains('in') ? start() : stop()), {threshold:.3}).observe(portrait);
