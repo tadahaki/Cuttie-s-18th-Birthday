@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cuttie's 18th Birthday</title>
+<meta name="theme-color" content="#071A45">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<!-- SVG library -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbeec6"/><stop offset=".35" stop-color="#D4AF72"/><stop offset=".7" stop-color="#a9823f"/><stop offset="1" stop-color="#f1d9a0"/>
+    </linearGradient>
+    <linearGradient id="gs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#C5CAD5"/><stop offset="1" stop-color="#8d95a8"/>
+    </linearGradient>
+    <radialGradient id="gem" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#8fb8ff"/><stop offset=".5" stop-color="#1f56b3"/><stop offset="1" stop-color="#0a2a6b"/>
+    </radialGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a68c9"/><stop offset="1" stop-color="#0a2a6b"/></linearGradient>
+    <radialGradient id="pearl" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#e8e6ee"/><stop offset="1" stop-color="#b9bccb"/>
+    </radialGradient>
+
+    <!-- Royal tiara crown -->
+    <symbol id="crown" viewBox="0 0 120 90">
+      <!-- velvet cap -->
+      <path d="M13 70 Q14 42 40 35 Q60 29 80 35 Q106 42 107 70 Z" fill="url(#cap)" stroke="url(#gg)" stroke-width="1"/>
+      <g fill="none" stroke="#C5CAD5" stroke-width=".5" opacity=".55"><path d="M30 68 Q34 48 48 38"/><path d="M90 68 Q86 48 72 38"/><path d="M60 34 L60 68"/></g>
+      <!-- spires -->
+      <g fill="url(#gg)" stroke="#fff1cd" stroke-width=".7" stroke-linejoin="round">
+        <path d="M50 72 C54 52 58 36 60 13 C62 36 66 52 70 72 Z"/>
+        <path d="M24 72 C32 56 36 40 38 24 C42 40 46 56 52 72 Z"/>
+        <path d="M96 72 C88 56 84 40 82 24 C78 40 74 56 68 72 Z"/>
+        <path d="M8 72 C12 60 14 48 16 37 C19 48 22 60 28 72 Z"/>
+        <path d="M112 72 C108 60 106 48 104 37 C101 48 98 60 92 72 Z"/>
+      </g>
+      <!-- filigree scrolls -->
+      <g fill="none" stroke="url(#gg)" stroke-width="1.3" stroke-linecap="round">
+        <path d="M32 68 Q38 56 46 62 Q50 65 52 58"/>
+        <path d="M88 68 Q82 56 74 62 Q70 65 68 58"/>
+        <path d="M15 68 Q18 61 24 65"/><path d="M105 68 Q102 61 96 65"/>
+      </g>
+      <!-- band -->
+      <path d="M7 68 Q60 79 113 68 L111 79 Q60 90 9 79 Z" fill="url(#gg)" stroke="#fff1cd" stroke-width=".8" stroke-linejoin="round"/>
+      <path d="M10 73 Q60 84 110 73" fill="none" stroke="#7a5a22" stroke-width=".6" opacity=".7"/>
+      <circle cx="60" cy="80" r="4.6" fill="url(#gem)" stroke="#fff1cd" stroke-width=".9"/>
+      <circle cx="40" cy="77.4" r="3" fill="url(#gem)" stroke="#fff1cd" stroke-width=".7"/>
+      <circle cx="80" cy="77.4" r="3" fill="url(#gem)" stroke="#fff1cd" stroke-width=".7"/>
+      <circle cx="22" cy="73.5" r="2.2" fill="url(#pearl)"/><circle cx="98" cy="73.5" r="2.2" fill="url(#pearl)"/>
+      <circle cx="50" cy="79" r="1.6" fill="url(#pearl)"/><circle cx="70" cy="79" r="1.6" fill="url(#pearl)"/>
+      <circle cx="31" cy="76" r="1.6" fill="url(#pearl)"/><circle cx="89" cy="76" r="1.6" fill="url(#pearl)"/>
+      <!-- center jewel -->
+      <path d="M60 30 L64 41 L60 54 L56 41 Z" fill="url(#gem)" stroke="#fff1cd" stroke-width=".8"/>
+      <path d="M60 32 L61.8 41 L60 45 Z" fill="#fff" opacity=".35"/>
+      <circle cx="60" cy="62" r="2" fill="url(#pearl)"/>
+      <!-- tip pearls -->
+      <circle cx="60" cy="9.5" r="4.2" fill="url(#pearl)" stroke="#fff1cd" stroke-width=".6"/>
+      <circle cx="38" cy="20.5" r="3.3" fill="url(#pearl)" stroke="#fff1cd" stroke-width=".5"/>
+      <circle cx="82" cy="20.5" r="3.3" fill="url(#pearl)" stroke="#fff1cd" stroke-width=".5"/>
+      <circle cx="16" cy="33.5" r="2.7" fill="url(#pearl)" stroke="#fff1cd" stroke-width=".5"/>
+      <circle cx="104" cy="33.5" r="2.7" fill="url(#pearl)" stroke="#fff1cd" stroke-width=".5"/>
+      <g fill="#fff"><path d="M60 0 L61 3 L64 4 L61 5 L60 8 L59 5 L56 4 L59 3Z" opacity=".9"/>
+      <path d="M92 8 L92.8 10.2 L95 11 L92.8 11.8 L92 14 L91.2 11.8 L89 11 L91.2 10.2Z" opacity=".7"/>
+      <path d="M28 10 L28.8 12.2 L31 13 L28.8 13.8 L28 16 L27.2 13.8 L25 13 L27.2 12.2Z" opacity=".7"/></g>
+    </symbol>
+
+    <symbol id="flower" viewBox="0 0 40 40">
+      <g fill="none" stroke="currentColor" stroke-width="1.1">
+        <ellipse cx="20" cy="9.5" rx="4.2" ry="8"/>
+        <ellipse cx="20" cy="9.5" rx="4.2" ry="8" transform="rotate(60 20 20)"/>
+        <ellipse cx="20" cy="9.5" rx="4.2" ry="8" transform="rotate(120 20 20)"/>
+        <ellipse cx="20" cy="9.5" rx="4.2" ry="8" transform="rotate(180 20 20)"/>
+        <ellipse cx="20" cy="9.5" rx="4.2" ry="8" transform="rotate(240 20 20)"/>
+        <ellipse cx="20" cy="9.5" rx="4.2" ry="8" transform="rotate(300 20 20)"/>
+        <circle cx="20" cy="20" r="2.6" fill="currentColor"/>
+      </g>
+    </symbol>
+    <symbol id="corner" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+        <path d="M2 62 V16 Q2 2 16 2 H62"/>
+        <path d="M9 62 V20 Q9 9 20 9 H62" opacity=".5"/>
+        <path d="M16 16 q10 2 12 12 q-10 -2 -12 -12z"/>
+        <path d="M16 16 q-2 10 -12 12"/>
+      </g>
+      <g transform="translate(14 14) scale(.55)" fill="none" stroke="currentColor" stroke-width="1.6"><use href="#flower" width="40" height="40"/></g>
+    </symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></g></symbol>
+    <symbol id="i-dress" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M9 2l-2 6 3 3-4 11h12L14 11l3-3-2-6"/><path d="M9 2c1 2 5 2 6 0"/></g></symbol>
+  </defs>
+</svg>
+
+<canvas id="glitter" aria-hidden="true"></canvas>
+
+<!-- 01 Opening: doors + envelope -->
+<div id="intro" role="dialog" aria-label="Invitation envelope">
+  <div class="door left"></div><div class="door right"></div>
+  <div class="stage">
+    <div class="kicker">Cuttie's 18th Birthday</div>
+    <h1 class="silver-text">You Are Cordially Invited</h1>
+    <div class="envelope" aria-hidden="true">
+      <div class="env-back"></div>
+      <div class="letter"><small>Royal Invitation</small><b>Cuttie's 18th</b></div>
+      <div class="env-front"></div>
+      <div class="flap"></div>
+      <button class="seal" id="sealBtn" tabindex="-1" aria-hidden="true">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="sealGold" gradientUnits="userSpaceOnUse" cx="36" cy="28" r="90">
+        <stop offset="0" stop-color="#fff3cf"/><stop offset=".3" stop-color="#e8c987"/>
+        <stop offset=".65" stop-color="#b98c42"/><stop offset="1" stop-color="#6f4a14"/>
+      </radialGradient>
+      <radialGradient id="sealDisk" gradientUnits="userSpaceOnUse" cx="44" cy="40" r="40">
+        <stop offset="0" stop-color="#f6e2b0"/><stop offset=".55" stop-color="#d1a95f"/><stop offset="1" stop-color="#9a6f2c"/>
+      </radialGradient>
+      <linearGradient id="sealShine" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <!-- scalloped wax edge -->
+    <g fill="url(#sealGold)" stroke="#6f4a14" stroke-width=".5">
+      <circle cx="89.0" cy="50.0" r="8.6"/><circle cx="86.6" cy="63.3" r="8.6"/><circle cx="79.9" cy="75.1" r="8.6"/><circle cx="69.5" cy="83.8" r="8.6"/><circle cx="56.8" cy="88.4" r="8.6"/><circle cx="43.2" cy="88.4" r="8.6"/><circle cx="30.5" cy="83.8" r="8.6"/><circle cx="20.1" cy="75.1" r="8.6"/><circle cx="13.4" cy="63.3" r="8.6"/><circle cx="11.0" cy="50.0" r="8.6"/><circle cx="13.4" cy="36.7" r="8.6"/><circle cx="20.1" cy="24.9" r="8.6"/><circle cx="30.5" cy="16.2" r="8.6"/><circle cx="43.2" cy="11.6" r="8.6"/><circle cx="56.8" cy="11.6" r="8.6"/><circle cx="69.5" cy="16.2" r="8.6"/><circle cx="79.9" cy="24.9" r="8.6"/><circle cx="86.6" cy="36.7" r="8.6"/>
+      <circle cx="50" cy="50" r="40"/>
+    </g>
+    <circle cx="50" cy="50" r="40" fill="url(#sealGold)"/>
+    <!-- embossed rings -->
+    <circle cx="50" cy="50" r="35" fill="none" stroke="#fff1c4" stroke-opacity=".8" stroke-width=".9"/>
+    <circle cx="50" cy="50" r="34" fill="none" stroke="#6f4a14" stroke-opacity=".45" stroke-width=".6"/>
+    <g fill="#fff1c4" fill-opacity=".85"><circle cx="81.5" cy="50.0" r=".9"/><circle cx="81.0" cy="55.5" r=".9"/><circle cx="79.6" cy="60.8" r=".9"/><circle cx="77.3" cy="65.8" r=".9"/><circle cx="74.1" cy="70.2" r=".9"/><circle cx="70.2" cy="74.1" r=".9"/><circle cx="65.8" cy="77.3" r=".9"/><circle cx="60.8" cy="79.6" r=".9"/><circle cx="55.5" cy="81.0" r=".9"/><circle cx="50.0" cy="81.5" r=".9"/><circle cx="44.5" cy="81.0" r=".9"/><circle cx="39.2" cy="79.6" r=".9"/><circle cx="34.3" cy="77.3" r=".9"/><circle cx="29.8" cy="74.1" r=".9"/><circle cx="25.9" cy="70.2" r=".9"/><circle cx="22.7" cy="65.8" r=".9"/><circle cx="20.4" cy="60.8" r=".9"/><circle cx="19.0" cy="55.5" r=".9"/><circle cx="18.5" cy="50.0" r=".9"/><circle cx="19.0" cy="44.5" r=".9"/><circle cx="20.4" cy="39.2" r=".9"/><circle cx="22.7" cy="34.2" r=".9"/><circle cx="25.9" cy="29.8" r=".9"/><circle cx="29.8" cy="25.9" r=".9"/><circle cx="34.2" cy="22.7" r=".9"/><circle cx="39.2" cy="20.4" r=".9"/><circle cx="44.5" cy="19.0" r=".9"/><circle cx="50.0" cy="18.5" r=".9"/><circle cx="55.5" cy="19.0" r=".9"/><circle cx="60.8" cy="20.4" r=".9"/><circle cx="65.7" cy="22.7" r=".9"/><circle cx="70.2" cy="25.9" r=".9"/><circle cx="74.1" cy="29.8" r=".9"/><circle cx="77.3" cy="34.3" r=".9"/><circle cx="79.6" cy="39.2" r=".9"/><circle cx="81.0" cy="44.5" r=".9"/></g>
+    <!-- inner disk -->
+    <circle cx="50" cy="50" r="27" fill="url(#sealDisk)" stroke="#fff1c4" stroke-width=".9"/>
+    <circle cx="50" cy="50" r="25.2" fill="none" stroke="#6f4a14" stroke-opacity=".5" stroke-width=".6"/>
+    <!-- monogram -->
+    <text x="50" y="62" text-anchor="middle" font-family="'Great Vibes','Brush Script MT',cursive" font-size="40" fill="#4a2f08" opacity=".55" transform="translate(.8 1)">C</text>
+    <text x="50" y="62" text-anchor="middle" font-family="'Great Vibes','Brush Script MT',cursive" font-size="40" fill="#fff6dc">C</text>
+    <!-- tiny ornaments -->
+    <g fill="#fff6dc">
+      <path d="M50 25.5 l1.2 2.6 2.6 1.2 -2.6 1.2 -1.2 2.6 -1.2 -2.6 -2.6 -1.2 2.6 -1.2z"/>
+      <circle cx="32" cy="50" r="1.2"/><circle cx="68" cy="50" r="1.2"/>
+    </g>
+    <!-- glossy highlight -->
+    <path d="M18 38 A34 34 0 0 1 56 15 A40 40 0 0 0 18 38Z" fill="url(#sealShine)"/>
+  </svg>
+</button>
+    </div>
+    <button class="btn" id="openBtn">Open Invitation</button>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- 02 Invitation card -->
+  <section id="hero">
+    <div class="wrap">
+      <div class="frame">
+        <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+        <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+        <svg class="crest reveal" viewBox="0 0 120 90"><use href="#crown"/></svg>
+        <p class="cordial reveal d1">You Are Cordially Invited</p>
+        <h2 class="name gold-text reveal d2">Cuttie Dulay Aguelo</h2>
+        <p class="celebrating reveal d3">Celebrating the 18th Birthday</p>
+        <div class="big18 reveal d3" id="big18" aria-label="18">
+          <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="96" fill="none" stroke="#D4AF72" stroke-width=".8"/>
+            <circle cx="100" cy="100" r="90" fill="none" stroke="#C5CAD5" stroke-width="1.2" stroke-dasharray="1 5" stroke-linecap="round"/>
+            <circle cx="100" cy="100" r="84" fill="none" stroke="#D4AF72" stroke-width=".6" opacity=".7"/>
+          </svg>
+          <span id="num">0</span>
+        </div>
+        <p class="lead reveal d4">Join us for a night of royal elegance.</p>
+        <p class="date-line reveal d4">NOVEMBER 14, 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Meet the Celebrant -->
+  <section id="celebrant">
+    <div class="wrap">
+      <div class="frame">
+        <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+        <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+        <h2 class="reveal">Meet the Celebrant</h2>
+        <div class="divider reveal d1"><svg><use href="#flower"/></svg></div>
+        <div class="meet">
+          <div class="portrait reveal" id="portrait">
+            <div class="photo-frame" id="mainPhoto"><img id="mainImg" src="images/portrait-1.jpg" alt="Portrait of Cuttie"></div>
+            <div class="thumbs" id="thumbs">
+              <button class="thumb active" data-src="images/portrait-1.jpg" aria-label="Portrait 1"><img src="images/portrait-1.jpg" alt=""></button>
+              <button class="thumb" data-src="images/portrait-2.jpg" aria-label="Portrait 2"><img src="images/portrait-2.jpg" alt=""></button>
+              <button class="thumb" data-src="images/portrait-3.jpg" aria-label="Portrait 3"><img src="images/portrait-3.jpg" alt=""></button>
+            </div>
+          </div>
+          <div class="about reveal d2">
+            <h3 class="gold-text">Hello, I'm Cuttie</h3>
+            <p>Turning eighteen is a doorway to new dreams. I would be honored to walk through it with the family and friends who have shaped my story.</p>
+            <blockquote>"I am not just turning eighteen. I am stepping into the life I have always dreamed of."</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Event Details -->
+  <section id="details">
+    <div class="wrap">
+      <div class="frame">
+        <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+        <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+        <h2 class="reveal">Event Details</h2>
+        <div class="divider reveal d1"><svg><use href="#flower"/></svg></div>
+        <div class="cards">
+          <div class="card reveal"><svg><use href="#i-cal"/></svg><h4>Date</h4><p id="dDate"></p></div>
+          <div class="card reveal d1"><svg><use href="#i-clock"/></svg><h4>Time</h4><p id="dTime"></p></div>
+          <div class="card reveal d2"><svg><use href="#i-pin"/></svg><h4>Venue</h4><p id="dVenue"></p></div>
+          <div class="card reveal d3"><svg><use href="#i-dress"/></svg><h4>Dress Code</h4><p id="dDress"></p></div>
+        </div>
+        <div class="countdown reveal" id="countdown" aria-live="off"></div>
+        <div class="actions reveal">
+          <a class="btn" id="gcal" target="_blank" rel="noopener">Add to Google Calendar</a>
+          <button class="btn ghost" id="icsBtn">Download Calendar File</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Venue -->
+  <section id="venue">
+    <div class="wrap">
+      <div class="frame">
+        <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+        <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+        <h2 class="reveal">Venue</h2>
+        <div class="divider reveal d1"><svg><use href="#flower"/></svg></div>
+        <div class="venue reveal d1" id="venueBox">
+          <div class="venue-photo"><img id="venueImg" src="images/venue.jpg" alt="Venue"></div>
+          <div class="venue-info">
+            <h3 class="gold-text" id="vName"></h3>
+            <p id="vAddr"></p>
+            <div class="actions"><a class="btn" id="dirBtn" target="_blank" rel="noopener">Get Directions</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 18 Treasures -->
+  <section id="traditions">
+    <div class="wrap">
+      <div class="frame">
+        <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+        <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+        <h2 class="reveal">The 18 Treasures</h2>
+        <div class="divider reveal d1"><svg><use href="#flower"/></svg></div>
+        <div class="tabs reveal" role="tablist" aria-label="Debut traditions">
+          <button class="tab" role="tab" aria-selected="true" data-tab="roses">18 Roses</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="candles">18 Candles</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="treasures">18 Treasures</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="more">More</button>
+        </div>
+        <div class="panel active" id="p-roses"><ol class="names" id="l-roses"></ol></div>
+        <div class="panel" id="p-candles"><ol class="names" id="l-candles"></ol></div>
+        <div class="panel" id="p-treasures"><ol class="names" id="l-treasures"></ol></div>
+        <div class="panel" id="p-more">
+          <div class="trad">
+            <div>Grand Entrance</div>
+            <div>Intermission Number<small>James Paculio</small></div>
+            <div>Birthday Song</div>
+            <div>Cake-Blowing Ceremony</div>
+            <div>Special Messages</div>
+            <div>Parlor Games</div>
+            <div>Photo Opportunity</div>
+            <div>Dance Party</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 Program -->
+  <section id="program">
+    <div class="wrap">
+      <div class="frame">
+        <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+        <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+        <h2 class="reveal">Program</h2>
+        <div class="divider reveal d1"><svg><use href="#flower"/></svg></div>
+        <p class="host reveal">Host: <b>Jean Rose Remedio Yamson</b></p>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 Closing -->
+  <section id="closing">
+    <canvas id="fx" aria-hidden="true"></canvas>
+    <div class="floaters" aria-hidden="true" id="floaters"></div>
+    <div class="wrap">
+      <div class="frame">
+        <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+        <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+        <div class="poster" id="poster"><img src="images/poster.jpg" alt="Cuttie's 18th Birthday"></div>
+        <h2 class="thanks gold-text reveal d1">Thank you for celebrating this special day with me!</h2>
+        <div class="divider reveal d2"><svg><use href="#flower"/></svg></div>
+        <p class="final-quote reveal d2">"Eighteen candles, a thousand dreams, a lifetime of love."</p>
+        <p class="sign gold-text reveal d3">Cuttie Dulay Aguelo<small>November 14, 2026</small></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
