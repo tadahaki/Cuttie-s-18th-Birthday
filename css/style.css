@@ -7,7 +7,7 @@
   --script:'Great Vibes','Brush Script MT',cursive;
 }
 *{box-sizing:border-box;margin:0;padding:0;min-width:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;background-color:#071A45}
 body{
   font-family:var(--serif);font-size:clamp(1.05rem,1rem + .35vw,1.25rem);color:var(--ivory);line-height:1.6;
   overflow-x:hidden;overflow-wrap:break-word;
@@ -228,6 +228,7 @@ h2.thanks{font-family:var(--script);font-weight:400;letter-spacing:0;font-size:c
 @keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.85}100%{transform:translateY(-110vh) rotate(360deg);opacity:0}}
 
 @media(max-width:560px){
+  body{background-attachment:scroll}
   .corner{width:38px;height:38px;top:6px!important}
   .corner.bl,.corner.br{top:auto!important;bottom:6px}
   .btn{letter-spacing:.08em;padding:.95rem 1.2rem;width:100%}
