@@ -81,6 +81,7 @@ $$('img').forEach(img => {
   function open(){
     if(started) return; started = true;
     intro.classList.add('open');
+     playMusic(); 
     setTimeout(() => intro.classList.add('leaving'), reduced?200:2700);
     setTimeout(() => { intro.classList.add('opened'); document.body.classList.remove('locked'); scrollTo(0,0); revealNow(); }, reduced?300:3200);
     setTimeout(() => intro.remove(), reduced?600:5200);
@@ -238,3 +239,37 @@ function closing(){
     x.globalAlpha = 1; requestAnimationFrame(loop);
   })(0);
 }
+/* =====================================================
+   Background music
+   ===================================================== */
+const bgm = $('#bgm'), musicBtn = $('#musicBtn');
+const START_AT = 0;        // seconds into the song to begin (e.g. 45 to skip the intro)
+const MAX_VOLUME = 0.6;    // 0 to 1
+let wantMusic = false, fadeTimer = null;
+
+function fadeTo(target, ms = 1500){
+  clearInterval(fadeTimer);
+  const steps = 30, start = bgm.volume, delta = (target - start) / steps;
+  let i = 0;
+  fadeTimer = setInterval(() => {
+    i++; bgm.volume = Math.min(1, Math.max(0, start + delta * i));
+    if(i >= steps){ clearInterval(fadeTimer); if(target === 0) bgm.pause(); }
+  }, ms / steps);
+}
+function playMusic(){
+  wantMusic = true;
+  musicBtn.hidden = false;
+  if(START_AT && bgm.currentTime < 1) bgm.currentTime = START_AT;
+  bgm.volume = 0;
+  bgm.play().then(() => { musicBtn.classList.add('on'); fadeTo(MAX_VOLUME); })
+            .catch(() => { musicBtn.classList.remove('on'); wantMusic = false; });
+}
+musicBtn.addEventListener('click', () => {
+  if(bgm.paused){ wantMusic = true; bgm.play().then(() => { musicBtn.classList.add('on'); fadeTo(MAX_VOLUME, 600); }); }
+  else { wantMusic = false; musicBtn.classList.remove('on'); fadeTo(0, 400); }
+});
+/* pause when the guest switches tabs, resume when they return */
+document.addEventListener('visibilitychange', () => {
+  if(document.hidden){ bgm.pause(); }
+  else if(wantMusic){ bgm.play().catch(() => {}); }
+});
